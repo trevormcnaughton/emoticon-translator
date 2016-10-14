@@ -9,10 +9,6 @@ exports.handle = function handle(client) {
 
     prompt() {
       client.addResponse('app:response:name:welcome')
-      client.addResponse('app:response:name:provide/documentation', {
-        documentation_link: 'http://docs.init.ai',
-      })
-      client.addResponse('app:response:name:provide/instructions')
       client.updateConversationState({
         helloSent: true
       })
@@ -31,8 +27,20 @@ exports.handle = function handle(client) {
     }
   })
 
+  const handleShrug = client.createStep({
+    satisfied() {
+      return false
+    },
+
+    prompt() {
+      client.addResponse('app:response:name:provide_translation/shrug')
+      client.done()
+    }
+  })
+
   client.runFlow({
     classifications: {
+      'request_translation/shrug': 'handleShrug'
 			// map inbound message classifications to names of streams
     },
     autoResponses: {
@@ -40,6 +48,7 @@ exports.handle = function handle(client) {
     },
     streams: {
       main: 'onboarding',
+      handleShrug: [handleShrug],
       onboarding: [sayHello],
       end: [untrained]
     }
