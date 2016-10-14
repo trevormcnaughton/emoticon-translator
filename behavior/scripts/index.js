@@ -33,12 +33,12 @@ exports.handle = function handle(client) {
       'provide_shrug': {
         minimumConfidence: 0.5
       },
+      'provide_tableflip': {
+        minimumConfidence: 0.5
+      },
       welcome: {
         minimumConfidence: 0.5
       },
-      'provide_tableflip': {
-        minimumConfidence: 0.5
-      }
     },
     streams: {
       main: 'onboarding',

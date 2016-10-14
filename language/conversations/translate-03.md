@@ -9,14 +9,20 @@ hi
 < o(^▽^)o
 * welcome
 
-[shrug](emoticon)
-* request_translation/shrug
+shrug
+* request_shrug
 
-< [¯\_( ◉ 3 ◉ )_/¯](emoticon)
+< ¯\_( ◉ 3 ◉ )_/¯
 * provide_shrug
 
-[tableflip](emoticon)
+tableflip
 * request_translation/tableflip
 
-< [(/¯◡ ‿ ◡)/¯ ~ ┻━┻](emoticon)
+< (/¯◡ ‿ ◡)/¯ ~ ┻━┻
 * provide_tableflip
+
+bye
+* goodbye
+
+< (｡•́︿•̀｡)
+* apology/untrained

@@ -9,14 +9,14 @@ hi
 < ( ・_・)ノ
 * welcome
 
-[tableflip](emoticon)
+tableflip
 * request_translation/tableflip
 
-< [(╯°□°）╯︵ ┻━┻](emoticon)
+< (╯°□°）╯︵ ┻━┻
 * provide_tableflip
 
-[shrug](emoticon)
-* request_translation/shrug
+shrug
+* request_shrug
 
-< [¯\_(ツ)_/¯](emoticon)
+< ¯\_(ツ)_/¯
 * provide_shrug
