@@ -36,6 +36,15 @@ exports.handle = function handle(client) {
       'provide_tableflip': {
         minimumConfidence: 0.5
       },
+      'provide_cat': {
+        minimumConfidence: 0.5
+      },
+      'provide_dog': {
+        minimumConfidence: 0.5
+      },
+      'provide_cool': {
+        minimumConfidence: 0.5
+      },
       welcome: {
         minimumConfidence: 0.5
       },
