@@ -27,28 +27,15 @@ exports.handle = function handle(client) {
     }
   })
 
-  const handleShrug = client.createStep({
-    satisfied() {
-      return false
-    },
-
-    prompt() {
-      client.addResponse('app:response:name:provide_translation')
-      client.done()
-    }
-  })
-
   client.runFlow({
-    classifications: {
-      'request_translation/shrug': 'handleShrug'
-			// map inbound message classifications to names of streams
-    },
+    classifications: {},
     autoResponses: {
-      // configure responses to be automatically sent as predicted by the machine learning model
+      'provide_translation/shrug': {
+        minimumConfidence: 0.5
+      }
     },
     streams: {
       main: 'onboarding',
-      handleShrug: [handleShrug],
       onboarding: [sayHello],
       end: [untrained]
     }

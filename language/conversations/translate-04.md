@@ -13,10 +13,10 @@ hi
 * request_translation/shrug
 
 < [¯\_( ͠° ͟ʖ °͠ )_/¯](emoticon)
-* provide_translation
+* provide_translation/shrug
 
 [tableflip](emoticon)
 * request_translation/tableflip
 
 < [(._.) ~ ︵ ┻━┻](emoticon)
-* provide_translation
+* provide_translation/tableflip
