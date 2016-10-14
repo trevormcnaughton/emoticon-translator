@@ -30,7 +30,13 @@ exports.handle = function handle(client) {
   client.runFlow({
     classifications: {},
     autoResponses: {
-      'provide_translation/shrug': {
+      'provide_shrug': {
+        minimumConfidence: 0.5
+      },
+      welcome: {
+        minimumConfidence: 0.5
+      },
+      'provide_tableflip': {
         minimumConfidence: 0.5
       }
     },
@@ -40,4 +46,6 @@ exports.handle = function handle(client) {
       end: [untrained]
     }
   })
+
+  client.done()
 }
