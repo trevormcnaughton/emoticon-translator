@@ -33,7 +33,7 @@ exports.handle = function handle(client) {
     },
 
     prompt() {
-      client.addResponse('app:response:name:provide_translation/shrug')
+      client.addResponse('app:response:name:provide_translation')
       client.done()
     }
   })
